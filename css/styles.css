@@ -86,8 +86,8 @@ body {
 /* Main buttons */
 
 .main-button {
-  min-width: 200px;
-  padding: 10px 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
@@ -222,7 +222,8 @@ body {
 }
 
 .hero-btn {
-  min-width: 216px;
+  padding-left: 32px;
+  padding-right: 32px;
 }
 
 /* Company characteristics section */
@@ -527,6 +528,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 .subscribe-submit-icon {
@@ -863,15 +866,17 @@ body {
   border: none;
 }
 
-.modal-checkbox:focus-within + .checkbox-box {
-  outline: 1px solid var(--accent-color);
+.modal-checkbox:focus + .checkbox-box {
+  border: 2px solid var(--accent-color);
 }
 
 .modal-checkbox:checked:focus + .checkbox-box {
-  outline: 1px solid var(--secondary-text-color);
+  outline: 2px solid var(--accent-color);
 }
 
 .modal-submit-button {
   display: block;
   margin: 0 auto;
+  padding-left: 52px;
+  padding-right: 52px;
 }
