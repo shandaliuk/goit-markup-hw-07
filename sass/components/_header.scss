@@ -1,27 +1,31 @@
-.site-header {
+.header {
   border-bottom: 1px solid #ececec;
 }
 
-.site-header__container {
+.header__container {
   display: flex;
   align-items: center;
 }
 
-.site-header__navigation {
+.navigation {
   display: flex;
   align-items: center;
 }
 
-.header-list {
+.navigation__list {
   display: flex;
   column-gap: 50px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+
+  &--contacts {
+    margin-left: auto;
+  }
 }
 
-.header-list__link {
+.navigation__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
@@ -57,11 +61,7 @@
   }
 }
 
-.site-header__header-list {
-  margin-left: auto;
-}
-
-.header-list__icon {
+.navigation__icon {
   margin-right: 10px;
   fill: currentColor;
 

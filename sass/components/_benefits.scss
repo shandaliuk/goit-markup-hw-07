@@ -1,17 +1,17 @@
-.characteristics-section {
+.benefits {
   padding-bottom: 0;
 }
 
-.characteristics-section__list {
+.benefits__list {
   display: flex;
   column-gap: 30px;
 }
 
-.characteristics-section__item {
+.benefits__item {
   width: calc((100% - 3 * 30px) / 4);
 }
 
-.characteristics-section__title {
+.benefits__title {
   margin-bottom: 10px;
   font-size: 14px;
   line-height: 1.14;
@@ -20,13 +20,13 @@
   letter-spacing: 0.03em;
 }
 
-.characteristics-section__text {
+.benefits__text {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
 }
 
-.characteristics-section__wrapper {
+.benefits__wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,7 +36,7 @@
   background-color: $tertiary-background-color;
 }
 
-.characteristics-section__icon {
+.benefits__icon {
   height: 70px;
   width: 70px;
 }

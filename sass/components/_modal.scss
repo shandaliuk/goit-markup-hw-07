@@ -41,15 +41,15 @@
   letter-spacing: 0.03em;
 }
 
-.info-form__list {
+.form__list {
   margin-bottom: 10px;
 }
 
-.info-form__item:not(:last-child) {
+.form__item:not(:last-child) {
   margin-bottom: 10px;
 }
 
-.info-form__label {
+.form__label {
   display: block;
   margin-bottom: 4px;
   font-size: 12px;
@@ -57,11 +57,11 @@
   letter-spacing: 0.01em;
 }
 
-.info-form__input-wrapper {
+.form__wrapper {
   position: relative;
 }
 
-.info-form__input {
+.form__input {
   width: 100%;
   padding: 11px 12px 11px 42px;
   font-size: 14px;
@@ -75,11 +75,11 @@
   }
 }
 
-.info-form__input:focus-within + .modal__icon {
+.form__input:focus-within + .form__icon {
   fill: $accent-color;
 }
 
-.info-form__icon {
+.form__icon {
   position: absolute;
   top: 50%;
   left: 15px;
@@ -113,7 +113,7 @@
   }
 }
 
-.info-form__main-button {
+.form__button {
   display: block;
   margin: 0 auto;
   padding-left: 52px;

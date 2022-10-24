@@ -1,21 +1,21 @@
-.partners-section__title {
+.partners__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
 
-.partners-section__list {
+.partners__list {
   display: flex;
   column-gap: 30px;
 }
 
-.partners-section__item {
+.partners__item {
   width: 170px;
   height: 92px;
 }
 
-.partners-section__link {
+.partners__link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +33,7 @@
   }
 }
 
-.partners-section__icon {
+.partners__icon {
   width: 106px;
   height: 60px;
   fill: currentColor;

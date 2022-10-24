@@ -1,21 +1,21 @@
-.activities-section__list {
+.activities__list {
   display: flex;
   column-gap: 30px;
 }
 
-.activities-section__item {
+.activities__item {
   position: relative;
   width: calc((100% - 2 * 30px) / 3);
 }
 
-.activities-section__title {
+.activities__title {
   margin-bottom: 50px;
   font-size: 36px;
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
 
-.activities-section__text-background {
+.activities__background {
   display: flex;
   position: absolute;
   left: 0;
@@ -27,7 +27,7 @@
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.activities-section__text {
+.activities__text {
   font-weight: 700;
   line-height: 1.14;
   text-align: center;

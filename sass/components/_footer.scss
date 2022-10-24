@@ -1,16 +1,16 @@
-.site-footer__container {
+.footer__container {
   display: flex;
   align-items: baseline;
   column-gap: 70px;
 }
 
-.site-footer {
+.footer {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: $secondary-background-color;
 }
 
-.company-address {
+.address {
   width: 231px;
   font-style: normal;
   font-size: 14px;
@@ -18,7 +18,7 @@
   letter-spacing: 0.03em;
 }
 
-.company-address__item {
+.address__item {
   display: block;
 
   &:not(:last-child) {
@@ -26,11 +26,11 @@
   }
 }
 
-.company-address__location {
+.address__location {
   margin-bottom: 9px;
 }
 
-.company-address__link {
+.address__link {
   color: rgba(255, 255, 255, 0.6);
   transition: color $transition-info;
 
@@ -40,11 +40,11 @@
   }
 }
 
-.company-address__location {
+.address__location {
   color: $white-color;
 }
 
-.footer-text {
+.footer__text {
   margin-bottom: 20px;
   font-size: 14px;
   font-weight: 700;
@@ -54,7 +54,7 @@
   color: $white-color;
 }
 
-.mailing-form__input {
+.subscription__input {
   width: 358px;
   padding: 15px 16px;
   margin-right: 12px;
@@ -77,11 +77,11 @@
   }
 }
 
-.mailing-form__button-wrapper {
+.subscription__wrapper {
   display: flex;
 }
 
-.mailing-form__main-button {
+.subscription__button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,7 +89,7 @@
   padding-right: 28px;
 }
 
-.main-button__icon {
+.button__icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
