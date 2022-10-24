@@ -36,9 +36,9 @@ body {
   background-color: $accent-color;
   cursor: pointer;
   transition: background-color $transition-info;
-}
 
-.main-button:hover,
-.main-button:focus {
-  background-color: #188ce8;
+  &:hover,
+  &:focus {
+    background-color: #188ce8;
+  }
 }

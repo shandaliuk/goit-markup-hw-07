@@ -25,12 +25,12 @@
   border-radius: 4px;
   color: var(--main-text-color);
   transition: border $transition-info, color $transition-info;
-}
 
-.partners-section__link:hover,
-.partners-section__link:focus {
-  border: 1px solid $accent-color;
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    border: 1px solid $accent-color;
+    color: $accent-color;
+  }
 }
 
 .partners-section__icon {

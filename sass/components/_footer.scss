@@ -20,24 +20,24 @@
 
 .company-address__item {
   display: block;
+
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 
 .company-address__location {
   margin-bottom: 9px;
 }
 
-.company-address__item:not(:last-child) {
-  margin-bottom: 9px;
-}
-
 .company-address__link {
   color: rgba(255, 255, 255, 0.6);
   transition: color $transition-info;
-}
 
-.company-address__link:hover,
-.company-address__link:focus {
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .company-address__location {
@@ -64,11 +64,17 @@
   background-color: transparent;
   color: $white-color;
   transition: border $transition-info;
-}
 
-.mailing-form__input:focus-within {
-  outline: none;
-  border: 1px solid $accent-color;
+  &:focus-within {
+    outline: none;
+    border: 1px solid $accent-color;
+  }
+
+  &::placeholder {
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .mailing-form__button-wrapper {
@@ -87,10 +93,4 @@
   width: 24px;
   height: 24px;
   margin-left: 10px;
-}
-
-.mailing-form__input::placeholder {
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
 }

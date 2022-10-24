@@ -8,16 +8,12 @@
   visibility: visible;
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity $transition-info, visibility $transition-info;
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.5);
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .modal {
@@ -32,6 +28,10 @@
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   background-color: $white-color;
+
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.5);
+  }
 }
 
 .modal__title {
@@ -68,11 +68,15 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border $transition-info;
+
+  &:focus-within {
+    outline: none;
+    border: 1px solid $accent-color;
+  }
 }
 
-.info-form__input:focus-within {
-  outline: none;
-  border: 1px solid $accent-color;
+.info-form__input:focus-within + .modal__icon {
+  fill: $accent-color;
 }
 
 .info-form__icon {
@@ -82,10 +86,6 @@
   transform: translateY(-50%);
   height: 18px;
   width: 18px;
-}
-
-.info-form__input:focus-within + .modal__icon {
-  fill: $accent-color;
 }
 
 .comment {
@@ -99,18 +99,18 @@
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   transition: border $transition-info;
-}
 
-.comment:focus-within {
-  outline: none;
-  border: 1px solid $accent-color;
-}
+  &:focus-within {
+    outline: none;
+    border: 1px solid $accent-color;
+  }
 
-.comment::placeholder {
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .checkbox__label {
@@ -141,24 +141,24 @@
   cursor: pointer;
   background-color: transparent;
   transition: background-color $transition-info, border $transition-info;
+
+  .checkbox:checked + & {
+    background-color: $accent-color;
+    border: none;
+  }
+
+  .checkbox:focus + & {
+    border: 2px solid $accent-color;
+  }
+
+  .checkbox:checked:focus + & {
+    outline: 2px solid $accent-color;
+  }
 }
 
 .checkbox__icon {
   width: 16px;
   height: 15px;
-}
-
-.checkbox:checked + .checkbox__frame {
-  background-color: $accent-color;
-  border: none;
-}
-
-.checkbox:focus + .checkbox__frame {
-  border: 2px solid $accent-color;
-}
-
-.checkbox:checked:focus + .checkbox__frame {
-  outline: 2px solid $accent-color;
 }
 
 .info-form__main-button {
@@ -183,11 +183,11 @@
   border: 1px solid rgba(0, 0, 0, 0.1);
   background-color: $white-color;
   transition: color $transition-info;
-}
 
-.modal__button:hover,
-.modal__button:focus {
-  color: $accent-color;
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
 }
 
 .modal__close-icon {
